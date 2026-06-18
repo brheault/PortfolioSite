@@ -1,5 +1,4 @@
 import {useEffect, useState} from "react"
-import {X, Menu} from "lucide-react"
 
 export const StarBackground = () => {
     //Create the state objects for our stars and meteors
