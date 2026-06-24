@@ -3,6 +3,7 @@ import { StarBackground } from "../components/StarBackground";
 import { Intro } from "../components/Intro";
 import { NavBar } from "../components/NavBar";
 import { AboutMe } from "../components/AboutMe";
+import { Skills } from "../components/Skills";
 
 export const Home = () => {
     return <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
@@ -19,6 +20,7 @@ export const Home = () => {
         <main>
             <Intro />
             <AboutMe />
+            <Skills />
         </main>
 
         {/* Footer */}
