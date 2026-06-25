@@ -3,12 +3,12 @@ import {useEffect, useState} from "react"
 export const StarBackground = () => {
     //Create the state objects for our stars and meteors
     const [stars, setStars] = useState([]);
-    const [meteors, setMeteors] = useState([]);
+    // const [meteors, setMeteors] = useState([]);
 
     //When the page is loaded, generate all the stars
     useEffect(() => {
         generateStars();
-        generateMeteors();
+        // generateMeteors();
 
         const handleResize = () => {
             generateStars()
@@ -38,6 +38,7 @@ export const StarBackground = () => {
         setStars(newStars);
     }
 
+    /*
     const generateMeteors = () => {
         //Determine the number of stars by the size of the window.
         const numberofMeteors = 4;
@@ -55,6 +56,7 @@ export const StarBackground = () => {
         }
         setMeteors(newMeteors);
     }
+        */
 
     //With all of our star data created, make a div for each one to render them
     return (
@@ -76,7 +78,7 @@ export const StarBackground = () => {
                     }}
                 />
             ))}
-            {meteors.map((meteor) => (
+            {/*meteors.map((meteor) => (
                 <div 
                     key={meteor.id}
                     className="meteor animate-meteor"
@@ -89,7 +91,7 @@ export const StarBackground = () => {
                         animationDuration: meteor.animationDuration + 's',
                     }}
                 />
-            ))}
+            )) */}
         </div>
     );
 }
