@@ -32,7 +32,7 @@ export const NavBar = () => {
         <div className="container flex items-center justify-between">
             <a className="text-xl font-bold text-primary flex items-center" href="#home">
                 <span className="relative z-10">
-                    <span classname="text-glow text-foreground">
+                    <span className="text-glow text-foreground">
                         Ben Rheault
                     </span>
                 </span>
